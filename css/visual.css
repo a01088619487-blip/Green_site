@@ -1,0 +1,50 @@
+.visual{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-height: 1080px;
+    min-height: 300px;
+    padding-top: 17%;
+    /* 높이로 맞추는게 아니라 비율로 */
+    background-color: #333;
+}
+.visual video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.video-inner{
+    /* padding-top: 25%; */
+    color: #fff;
+
+}
+
+.video-inner h2 {
+    font-size: clamp(28px, 4vw, 120px);
+    /* clamp 최소사이즈, vw ,최대사이즈 */
+}
+.video-inner p {
+    width: 50%;
+    margin-bottom: 6%;
+    font-size: clamp(12px, 2vw, 18px);
+    
+}
+
+.video-inner a{
+    display: block;
+    width: 20%;
+    max-width: 300px;
+    min-width: 100px;
+    text-align: center;
+    padding: 1% 0;
+    /* background-color: brown; */
+    font-size: clamp(12px, 1vw , 16px);
+    border: 1px solid #fff;
+
+}

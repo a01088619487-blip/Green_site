@@ -1,0 +1,30 @@
+/* 900 */
+@media(max-width: 900px){
+    .nav > li > a {
+        font-size: 16px;
+
+    }
+}
+
+/* 768 */
+@media(max-width : 768px){
+    .nav {
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+
+    .news-wrap li{
+        width:  calc((100% - 4%)/3);
+    }
+
+}
+
+/* 390px */
+@media(max-width : 390px){
+ .news-wrap li{
+    width: 100%;
+ }
+}
+

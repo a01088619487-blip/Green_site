@@ -1,22 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 파비콘 -->
-     <link rel="icon" href="images/news1.jpg">
+    <link rel="icon" href="images/news1.jpg" />
     <title>green-site Ex</title>
-<!-- css 연결 -->
- <link rel="stylesheet" href="css/footer.css">
- <link rel="stylesheet" href="css/header.css">
- <link rel="stylesheet" href="css/main.css">
- <link rel="stylesheet" href="css/news.css">
- <link rel="stylesheet" href="css/product.css">
- <link rel="stylesheet" href="css/responsive.css">
- <link rel="stylesheet" href="css/visual.css">
+    <!-- css 연결 -->
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/visual.css" />
 
-</head>
-<body>
-    
-</body>
+    <!-- swiper  cdn css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- 상단 -->
+      <header class="header">
+        <div class="inner">
+          <!-- header Top -->
+          <div class="header-top">
+            <ul class="util">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Join</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+
+          <!-- header Bt -->
+          <div class="header-bt">
+            <!-- logo -->
+            <h1><a href="#">GREEN-A</a></h1>
+            <!-- menu -->
+            <ul class="nav">
+              <li><a href="#">DEPARTMENT</a></li>
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">YOUTUEB</a></li>
+              <li><a href="#">COMMUNITY</a></li>
+              <li><a href="#">LOCATION</a></li>
+            </ul>
+            <!-- 모바일 메뉴[햄버거] -->
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 모바일 일때 side menu -->
+       <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="#">DEPARTMENT</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">YOUTUBE</a></li>
+          <li><a href="#">COMMUNITY</a></li>
+          <li><a href="#">LOCATION</a></li>
+          <li><a href="#">연락처</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">로그인 </a></li>
+        </ul>
+       </div>
+       <!-- 모바일일때 오버레이 -->
+       <div class="overlay"></div>
+
+
+      <!-- 비주얼 -->
+      <div class="visual">
+        <!-- 비디오 영상 -->
+        <video autoplay loop muted>
+          <!-- 비디오 영상플레이 루프 음소거 -->
+          <source src="images/visual.mp4" type="video/mp4" />
+        </video>
+        <!-- 비디오 내용 -->
+        <div class="video-inner inner">
+          <h2>INNVATION</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            quibusdam consectetur excepturi necessitatibus
+          </p>
+          <a href="#">view datail</a>
+        </div>
+      </div>
+    </div>
+    <!-- 뉴스 -->
+    <section class="news">
+      <div class="inner">
+        <h2>RECENT NEWS</h2>
+        <ul class="news-wrap">
+          <li>
+            <div class="pic">
+              <img src="images/news1.jpg" alt="news" />
+            </div>
+            <h3><a href="#">Lorem ipsum</a></h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              qui recusandae fugit iure maiores debitis?
+            </p>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="images/news2.jpg" alt="news" />
+            </div>
+            <h3><a href="#">Lorem ipsum </a></h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              qui recusandae fugit iure maiores debitis?
+            </p>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="images/news4.jpg" alt="news" />
+            </div>
+            <h3><a href="#">Lorem ipsum </a></h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              qui recusandae fugit iure maiores debitis?
+            </p>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="images/news3.jpg" alt="news" />
+            </div>
+            <h3><a href="#">Lorem ipsum </a></h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
+              qui recusandae fugit iure maiores debitis?
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 상품(스와이퍼적용) -->
+    <section class="product">
+      <div class="inner">
+        <h2>PRODUCTS</h2>
+        <p>다양한 상품을 경험하세요</p>
+        <!-- 스와이퍼 시작 -->
+        <div class="swiper productSwiper">
+          <div class="swiper-wrapper">
+            <!-- 슬라이드 -->
+            <div class="swiper-slide">
+              <img src="images/about-03-1.png" alt="product" />
+              <div class="slide-info">
+                <h3>Creative Design</h3>
+                <p>창의적인 디자인 프로젝트</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/about-05-1.png" alt="product" />
+              <div class="slide-info">
+                <h3>Creative Design</h3>
+                <p>창의적인 디자인 프로젝트</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/draw-cristmas.png" alt="product" />
+              <div class="slide-info">
+                <h3>Creative Design</h3>
+                <p>창의적인 디자인 프로젝트</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/about-05-1.png" alt="product" />
+              <div class="slide-info">
+                <h3>Creative Design</h3>
+                <p>창의적인 디자인 프로젝트</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 하단 -->
+  </body>
 </html>

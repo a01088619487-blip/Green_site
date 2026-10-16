@@ -1,0 +1,54 @@
+/* 리셋 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ul리셋 */
+ul,li{
+    list-style: none;
+}
+
+/* a리셋 */
+a{
+    text-decoration: none;
+    color: inherit;
+    /* inherit 색 부모 따라가긔 */
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+/* 공동영역 */
+.inner{
+    position: relative;
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    /* background-color: rgb(79, 167, 113); */
+    
+}
+
+section{
+    padding: 7% 0;
+}
+section h2{
+    text-align: center;
+    font-size: clamp(20px, 2vw , 24px);
+    font-weight: bold;
+    margin-bottom: 3%;
+
+}
+
+/* 폰트 고정 */
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff2);
+    font-weight: 300;
+    font-display: swap;
+}
+body{
+    font-family: 'NanumSquareNeo';
+}

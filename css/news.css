@@ -1,0 +1,33 @@
+.news-wrap {
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit , minmax(300px , 1fr)); */
+  /* 그리드로 하니깐 모바일로 하게될때 높이가 고정이 안되어잇어서 팅겨 나감..? */
+  display: flex;
+  flex-wrap: wrap;
+  /* 밑으로 팅기는 */
+  gap: 2%;
+}
+.news-wrap li {
+  width: calc((100% - 6%) / 4);
+  /* news-wrap { display: flex;} 일 경우에 쓰는 calc */
+  padding: 1%;
+  background-color: rgba(240, 248, 255, 0.068);
+}
+
+.pic {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.pic img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* width: 100%;
+  display: block;   mian.css에 다가 넣어놧음*/
+}
+
+.news-wrap li h3 {
+  padding: 2% 0;
+}
