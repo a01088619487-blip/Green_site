@@ -1,3 +1,45 @@
-.product{
-    background-color: #eeeeeebe;
+.product {
+  background-color: #eeeeeebe;
+}
+
+.product > .inner > p {
+  font-size: clamp(14px, 1vw, 16px);
+  margin: 3%;
+}
+
+.productSwiper {
+  background-color: cornflowerblue;
+}
+/* 페이지네이션 */
+.product .swiper-pagination {
+  bottom: -9% !important;
+
+  /* !important; :css가 주는값보다 내가주는값을 더 높게 판정하겟다 */
+
+  background-color: rgb(144, 255, 140);
+}
+
+/* 화살표 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  width: 45px;
+  height: 45px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #23353188;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 14px !important;
+}
+
+
+
+.swiper-pagination-bullet-active{
+    background-color: rgb(12, 29, 29) !important;
+    width: 50px !important; 
+    height: 10px !important;
+    border-radius: 0 !important;
 }

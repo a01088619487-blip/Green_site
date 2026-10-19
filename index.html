@@ -24,7 +24,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- js -->
     <script src="js/main.js" defer></script>
+    <!-- Swiper 기능 -->
+    <script src="js/swiper_pro.js" defer></script>
   </head>
+
   <body>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
@@ -65,7 +68,7 @@
       </header>
 
       <!-- 모바일 일때 side menu -->
-       <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu" id="mobile-menu">
         <ul>
           <li><a href="#">DEPARTMENT</a></li>
           <li><a href="#">GALLERY</a></li>
@@ -76,10 +79,9 @@
           <li><a href="#">회원가입</a></li>
           <li><a href="#">로그인 </a></li>
         </ul>
-       </div>
-       <!-- 모바일일때 오버레이 -->
-       <div class="overlay"></div>
-
+      </div>
+      <!-- 모바일일때 오버레이 -->
+      <div class="overlay"></div>
 
       <!-- 비주얼 -->
       <div class="visual">
@@ -98,97 +100,145 @@
           <a href="#">view datail</a>
         </div>
       </div>
-    </div>
-    <!-- 뉴스 -->
-    <section class="news">
-      <div class="inner">
-        <h2>RECENT NEWS</h2>
-        <ul class="news-wrap">
-          <li>
-            <div class="pic">
-              <img src="images/news1.jpg" alt="news" />
-            </div>
-            <h3><a href="#">Lorem ipsum</a></h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              qui recusandae fugit iure maiores debitis?
-            </p>
-          </li>
-          <li>
-            <div class="pic">
-              <img src="images/news2.jpg" alt="news" />
-            </div>
-            <h3><a href="#">Lorem ipsum </a></h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              qui recusandae fugit iure maiores debitis?
-            </p>
-          </li>
-          <li>
-            <div class="pic">
-              <img src="images/news4.jpg" alt="news" />
-            </div>
-            <h3><a href="#">Lorem ipsum </a></h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              qui recusandae fugit iure maiores debitis?
-            </p>
-          </li>
-          <li>
-            <div class="pic">
-              <img src="images/news3.jpg" alt="news" />
-            </div>
-            <h3><a href="#">Lorem ipsum </a></h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              qui recusandae fugit iure maiores debitis?
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
 
-    <!-- 상품(스와이퍼적용) -->
-    <section class="product">
-      <div class="inner">
-        <h2>PRODUCTS</h2>
-        <p>다양한 상품을 경험하세요</p>
-        <!-- 스와이퍼 시작 -->
-        <div class="swiper productSwiper">
-          <div class="swiper-wrapper">
-            <!-- 슬라이드 -->
-            <div class="swiper-slide">
-              <img src="images/about-03-1.png" alt="product" />
-              <div class="slide-info">
-                <h3>Creative Design</h3>
-                <p>창의적인 디자인 프로젝트</p>
+      <!-- 뉴스 -->
+      <section class="news">
+        <div class="inner">
+          <h2>RECENT NEWS</h2>
+          <ul class="news-wrap">
+            <li>
+              <div class="pic">
+                <img src="images/news1.jpg" alt="news" />
               </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="images/about-05-1.png" alt="product" />
-              <div class="slide-info">
-                <h3>Creative Design</h3>
-                <p>창의적인 디자인 프로젝트</p>
+              <h3><a href="#">Lorem ipsum</a></h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti qui recusandae fugit iure maiores debitis?
+              </p>
+            </li>
+            <li>
+              <div class="pic">
+                <img src="images/news2.jpg" alt="news" />
               </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="images/draw-cristmas.png" alt="product" />
-              <div class="slide-info">
-                <h3>Creative Design</h3>
-                <p>창의적인 디자인 프로젝트</p>
+              <h3><a href="#">Lorem ipsumdddwwdsds </a></h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti qui recusandae fugit iure maiores debitis?
+              </p>
+            </li>
+            <li>
+              <div class="pic">
+                <img src="images/news4.jpg" alt="news" />
               </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="images/about-05-1.png" alt="product" />
-              <div class="slide-info">
-                <h3>Creative Design</h3>
-                <p>창의적인 디자인 프로젝트</p>
+              <h3><a href="#">Lorem ipsum asdsadwdsadsaxca</a></h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti qui recusandae fugit iure maiores debitis?
+              </p>
+            </li>
+            <li>
+              <div class="pic">
+                <img src="images/news3.jpg" alt="news" />
               </div>
+              <h3><a href="#">Lorem ipsum dwdxdqzcsdew </a></h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti qui recusandae fugit iure maiores debitis?
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 상품(스와이퍼적용) -->
+      <section class="product">
+        <div class="inner">
+          <h2>PRODUCTS</h2>
+          <p>다양한 상품을 경험하세요</p>
+          <!-- 스와이퍼 시작 -->
+
+          <div class="swiper productSwiper">
+            <div class="swiper-wrapper">
+              <!-- 슬라이드 -->
+
+              <div class="swiper-slide">
+                <img src="images/about-03-1.png" alt="product" />
+
+                <div class="slide-info">
+                  <h3>Creative Design</h3>
+
+                  <p>창의적인 디자인 프로젝트</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/about-05-1.png" alt="product" />
+
+                <div class="slide-info">
+                  <h3>Creative Design</h3>
+
+                  <p>창의적인 디자인 프로젝트</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/draw-cristmas.png" alt="product" />
+
+                <div class="slide-info">
+                  <h3>Creative Design</h3>
+
+                  <p>창의적인 디자인 프로젝트</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/about-05-1.png" alt="product" />
+
+                <div class="slide-info">
+                  <h3>PRODUC Design</h3>
+
+                  <p>다양한 디자인 프로젝트</p>
+                </div>
+              </div>
+
+              <!-- 좌우 화살표 -->
+
+              <div class="swiper-button-prev"></div>
+
+              <div class="swiper-button-next"></div>
             </div>
           </div>
+
+          <!-- 페이지네이션 -->
+
+          <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </section>
-    <!-- 하단 -->
+      </section>
+      <!-- 하단 -->
+      <footer class="footer">
+        <div class="inner">
+          <!-- upper -->
+          <div class="upper">
+            <h2><a href="#">GREEN-A</a></h2>
+            <ul>
+              <li><a href="#">Plicy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Family Site</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <!-- lower -->
+          <div class="lower">
+            <address>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+              facere.<br />
+              TEL : 053-111-1234 C.P : 010-1234-5678
+            </address>
+            <p>2026 GREEN_A &copy; copyright all right reserved.</p>
+            <!-- &copy; -c 이거 임  -->
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

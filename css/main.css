@@ -4,6 +4,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* 이건..그 피그마때 사용하는 폰트사이즈와 메인 서브 색상 */
+:root{
+    * Color styles */
+--color--main: rgba(0, 206, 93, 1);
+
+/* Text-size styles */
+--text--title-h2: 32px;
+--text--title-h3: 24px;
+/* 여기서 만들수도잇음 예를들어 */
+/* 간격 */
+--spacing--xl : 70px;
+--spacing--m : 40px;
+--spacing--s : 20px;
+/* 사용방법  '--000--0-0' --가필수이당  이런식* /
+/* root가없으면 안됨 */
+}
+
 
 /* ul리셋 */
 ul,li{

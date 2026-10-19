@@ -42,6 +42,10 @@
 .header {
   width: 100%;
   /* background-color: #46f7a4; */
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .util {
@@ -57,6 +61,10 @@
   align-items:center;
   justify-content: space-between;
 }
+.header-bt h1{
+    font-size: clamp(24px, 3vw, 32px);
+}
+
 /* 메뉴 */
 .nav {
   display: flex;
@@ -126,5 +134,15 @@ transition: all 0.3s;
     height: 100vh;
     background-color: rgba(0, 0,0, 0.5);
     z-index: 999;
-    display: none;
+    /* display: none; */
+    opacity: 0;  
+    /* opacity 빠지면안됨 ㅠㅠ  */
+    visibility: hidden;
+    /* visibility 영역을 안보이게함 */
+    transition: all 0.3s;
+}
+.overlay.active{
+    /* g햄버거를 누르면 오파시티 오버레이를 행동한다 */
+    opacity: 1;
+    visibility: visible;
 }

@@ -16,7 +16,10 @@
 
 .pic {
   position: relative;
-  height: 180px;
+  /* height: 180px; 비율로,, 다 다른 높이라..높이가 안맞아서 */
+  aspect-ratio: 2/1.3;
+  /* 너비가 줄어도 높이도 같이 줄어드는 */
+
   overflow: hidden;
 }
 
@@ -30,4 +33,25 @@
 
 .news-wrap li h3 {
   padding: 2% 0;
+  font-size: clamp(16px, 1vw, 18px);
+  /* 왜 clamp는 자동으로 안떠? */
+  /* 말줄임 표시 max-textover까지 설정 */
+  max-width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* nowrap 한줄 말줄임표시 */
+  text-overflow: ellipsis;
+  background-color: chartreuse;
+}
+
+.news-wrap li p {
+  font-size: clamp(12px, 1vw, 16px);
+  /*  두줄 말줄임표시 */
+  overflow: hidden;
+/* 여러말줄임을 기능을 사용하기 위한 레이아웃 설정 */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* 2줄로할랭 */
+-webkit-box-orient: vertical;
+  /* 방향은? vertical*/
 }
